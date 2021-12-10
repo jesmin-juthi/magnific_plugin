@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>magnific plugin</title>
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <h4>Gallery Section</h4>
+        <div class="gallery">
+            <div class="single-gallery">
+                <a class="img-popup" href="assets/images/service1.jpg">
+                    <img src="assets/images/service1.jpg" alt="">
+                </a>
+            </div><!-- /.single-gallery -->
+            <div class="single-gallery">
+                <a class="img-popup" href="assets/images/service2.jpg">
+                    <img src="assets/images/service2.jpg" alt="">
+                </a>
+            </div><!-- /.single-gallery -->
+            <div class="single-gallery">
+                <a class="img-popup" href="assets/images/service3.jpg">
+                    <img src="assets/images/service3.jpg" alt="">
+                </a>
+            </div><!-- /.single-gallery -->
+        </div><!-- /.gallery -->
+    </div><!-- /.main -->
+    
+
+    <script src="assets/js/jquery-1.12.0.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.img-popup').magnificPopup({
+                type: 'image',
+                gallery:{
+                    enabled:true
+                }
+            })
+        });
+    </script>
+
+</body>
+</html>
